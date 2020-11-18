@@ -10,8 +10,6 @@ class CashRegister
         @price_total = []
     end
 
-    
-
     def add_item(title, price, quantity=1)
         @total += price * quantity
         quantity.times {@title_total << title}
@@ -39,7 +37,4 @@ class CashRegister
         end
     end
 end
-
-taylor = CashRegister.new(20)
-taylor.total = 1000
 
